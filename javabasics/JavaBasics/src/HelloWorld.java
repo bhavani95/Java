@@ -40,8 +40,9 @@ public class HelloWorld {
       //getters usage
       System.out.println("bhavani age retrived using getAge is "+bhavani.getAge()+" bhavani name retrived from getName is "+bhavani.getName());
       
-      
-      
+      //utilize the ageEvenOrOdd function
+      String typeOfAge = bhavani.ageOddorEven();
+      System.out.println("age type is "+typeOfAge);
 	}
 
 }

@@ -15,6 +15,12 @@ public class BasicClass {
 	public void describeThePerson() {
 		System.out.println("Hi my name is "+Name+" and iam "+age);
 	}
+	
+	public String ageOddorEven() {
+		
+	return getAge()%2 == 0 ? "Even" : "Odd";
+		
+	}
 
 	public int getAge() {
 		return age;
