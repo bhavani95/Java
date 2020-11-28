@@ -25,7 +25,9 @@ public class HelloWorld {
        * If we create an objcet we can access all the variables and methods declared as public
        * */
       
-      BasicClass bhavani = new BasicClass(); 
+      BasicClass bhavani = new BasicClass(10, "Bhavani K"); 
+      
+      System.out.println("bhavani object is"+bhavani);
       
     
       

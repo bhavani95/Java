@@ -16,6 +16,16 @@ public class BasicClass {
 		System.out.println("Hi my name is "+Name+" and iam "+age);
 	}
 	
+	
+	
+	//Parameterized constructor 
+	public BasicClass(int age, String name) {
+		super();
+		this.age = age;
+		Name = name;
+	}
+
+
 	public String ageOddorEven() {
 		
 	return getAge()%2 == 0 ? "Even" : "Odd";
@@ -29,6 +39,15 @@ public class BasicClass {
 	public void setAge(int age) {
 		this.age = age;
 	}
+
+	//to string method, when we print an object created it will print hexacode, to avoid it, we need to override the toString method for not exposing the hexa code
+	@Override
+	public String toString() {
+		return "BasicClass [age=" + age + ", Name=" + Name + "]";
+	}
+
+
+
 
 	public String getName() {
 		return Name;
